@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@solidjs/router": "^0.8.2",
+    "@vercel/analytics": "^1.0.1",
     "solid-js": "^1.7.5",
     "typescript": "^5.0.4",
     "vite": "^4.3.9",

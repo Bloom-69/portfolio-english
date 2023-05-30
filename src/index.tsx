@@ -1,5 +1,6 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
+import { inject } from "@vercel/analytics/*";
 
 import "./styles/index.css";
 
@@ -49,3 +50,6 @@ render(
   ),
   root!
 );
+
+// Inject the Vercel Analytics
+inject();
