@@ -1,0 +1,35 @@
+@import url(./fonts/GoogleSans.css);
+@import url(./fonts/Roboto.css);
+
+/* ICONS */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded");
+
+:root {
+  --background: #000000;
+  --button-background: #8ab4f8;
+  --button-hover: hsl(217, 89%, 87%);
+  --accent: #ffbb01;
+  --border-color: #e8eaed;
+
+  --text: #ffffff;
+  --button-text: #000000;
+
+  --floating-background: #e8eaed;
+  --floating-text: #000000;
+
+  --border-thickness: 0.2rem;
+  --border-radius: 1rem;
+
+  font-family: "Google Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: var(--background);
+  color: var(--text);
+  background-color: #242424;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

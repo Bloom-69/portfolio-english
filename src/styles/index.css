@@ -1,0 +1,214 @@
+@import url(./root.css);
+
+.material-symbols {
+  font-family: "Material Symbols Rounded";
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+.container {
+  display: flex;
+  margin: 1rem;
+  flex: 1;
+  width: auto;
+  overflow: auto;
+  word-wrap: break-word;
+  border-radius: var(--border-radius);
+  border: var(--border-thickness) solid var(--border-color);
+}
+
+.container main {
+  max-height: 100%;
+  margin: 1rem;
+}
+
+div.index-container {
+  justify-content: center;
+  width: 300px;
+  overflow: auto;
+  margin: 1rem;
+  border-radius: var(--border-radius);
+  border: var(--border-thickness) solid var(--border-color);
+}
+
+.index-container aside {
+  max-height: 100%;
+  margin: 1rem;
+}
+
+.toolbar {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-inline: 1rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row !important;
+}
+
+header h1.pageinfo {
+  font-size: medium;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.notfound > h1 {
+  font-size: 4.2em;
+  line-height: 1.1;
+}
+
+.notfound > h2 {
+  font-size: 2.6em;
+  line-height: 1.1;
+}
+
+button.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: var(--border-thickness) solid transparent;
+  padding: 0.6rem 1rem;
+  font-size: 1.4em;
+  outline: none;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--button-text);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button.btn:focus,
+button.btn:focus-visible {
+  outline: var(--accent) dotted 2px;
+}
+
+button.icon {
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+button.btn:disabled {
+  filter: brightness(70%);
+  cursor: not-allowed;
+}
+
+button.index-btn {
+  flex: 0;
+}
+
+button.about-btn {
+  flex: 0;
+}
+
+button.outlined {
+  border: var(--border-thickness) solid var(--border-color);
+  color: var(--text);
+}
+
+button.outlined:hover {
+  color: var(--button-text);
+  border: var(--border-thickness) solid transparent;
+}
+
+button.filled {
+  background-color: var(--button-background);
+}
+
+button.btn:hover {
+  background-color: var(--button-hover);
+}
+
+main.notfound {
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+}
+
+div.flex-container {
+  display: flex;
+  height: calc(100dvh - 8dvh);
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+h2.subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+nav.btn-group {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+span.pill {
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  margin-inline: 0.2rem;
+}
+
+span.filled {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  .container {
+    word-wrap: balance;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+ }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.grid-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide_scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
