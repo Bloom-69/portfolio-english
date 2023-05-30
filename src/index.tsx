@@ -1,6 +1,9 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
 import { inject } from "@vercel/analytics/*";
+ 
+// import some helper that is exposed by your current framework to determine the right mode manually
+import { DEV } from 'solid-js';
 
 import "./styles/index.css";
 
@@ -52,4 +55,6 @@ render(
 );
 
 // Inject the Vercel Analytics
-inject();
+inject({
+  mode: DEV ? 'development' : 'production',
+});
